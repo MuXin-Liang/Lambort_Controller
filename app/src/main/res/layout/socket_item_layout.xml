@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textColor="#000000"
+        android:focusable="false"
         android:text="设备" />
 
     <TextView
@@ -18,5 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="15sp"
+        android:focusable="false"
         android:text="TextView" />
 </LinearLayout>

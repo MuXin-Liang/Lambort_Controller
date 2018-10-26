@@ -42,7 +42,6 @@ public class ConnectThread extends Thread {
         handler.sendEmptyMessage(MainActivity.DEVICE_CONNECTED);
 
         //Sends a Message containing only the what value.
-        //public static final int DEVICE_CONNECTED = 2
 
         //从接口获取数据流，此为堵塞的读数据线程。
         try {
@@ -83,7 +82,7 @@ public class ConnectThread extends Thread {
                 outputStream.write(msg.getBytes());
 
                 Message message = Message.obtain();
-                message.what = MainActivity.SEND_MSG_SUCCSEE;//通知handler要做的工作
+                message.what = MainActivity.SEND_MSG_SUCCSEE;//通知handler发送成功
 
                 Bundle bundle = new Bundle();
                 bundle.putString("MSG",new String(msg));
